@@ -3,11 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/assets/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>products-list</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header class="flex justify-center items-center">
+      <h1 class="text-3xl font-bold pt-4 text-[#00f7ff]">List of Products</h1>
+    </header>
+    <main class="flex justify-center items-center flex-col">
+      <section class="flex justify-center items-center ">
+        <div>
+          <ul id="p-list">
+
+          </ul>
+        </div>
+        <div>
+          <ul id="a-list">
+
+          </ul>
+
+        </div>
+      </section>
+      <button class="bg-orange-400 text-black font-semibold p-2 mt-4 rounded-full cursor-pointer" id="f-button">Fragment</button>
+    </main>
+    <script type="module" src="/assets/js/main.js"></script>
   </body>
 </html>
